@@ -1,0 +1,67 @@
+body {
+  font-family: "Alumni Sans SC", sans-serif;
+}
+
+.header {
+  background-color: #ffecb7;
+  padding: 20px;
+  text-align: center;
+  padding: 8px 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__logo {
+  width: 150px;
+}
+
+.header__nav--a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.main__title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main__text {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.section__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 30px;
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffecb7;
+  text-align: center;
+  margin-top: 30px;
+  color: black;
+}
+
+.footer__socials--img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}/*# sourceMappingURL=main.css.map */
