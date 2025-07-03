@@ -1,9 +1,9 @@
 body {
-  font-family: "Alumni Sans SC", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .header {
-  background-color: #ffecb7;
+  background-color: #f6dec0;
   padding: 20px;
   text-align: center;
   padding: 8px 8px;
@@ -54,7 +54,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #ffecb7;
+  background-color: #f6dec0;
   text-align: center;
   margin-top: 30px;
   color: black;
