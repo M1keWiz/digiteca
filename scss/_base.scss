@@ -23,3 +23,15 @@
     text-align: center;
     margin-top: 30px;
 }
+
+@mixin breakpoint1{
+    @media (max-width: 850px) {
+        @content;
+    }
+}
+
+@mixin breakpoint2{
+    @media (max-width: 480px) {
+        @content;
+    }
+}

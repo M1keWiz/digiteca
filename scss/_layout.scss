@@ -14,6 +14,12 @@ body{
 
 .header__logo {
     width: 150px;
+    @include b.breakpoint1 {
+        width: 120px;
+    }
+    @include b.breakpoint2 {
+        width: 100px;
+    }
 }
 
 .header__nav--a {
@@ -23,6 +29,12 @@ body{
     display: flex;
     display: inline;
     padding: 0 10px;
+    @include b.breakpoint1 {
+        font-size: 25px;
+    }
+    @include b.breakpoint2 {
+        font-size: 20px;
+    }
 }
 
 
@@ -31,6 +43,12 @@ body{
     font-size: 50px;
     text-align: center;
     margin-top: 20px,; 
+    @include b.breakpoint1 {
+        font-size: 40px;
+    }
+    @include b.breakpoint2 {
+        font-size: 30px;
+    }
 }
 
 .main__text{
@@ -41,26 +59,131 @@ body{
     margin-right: 20px;
 }
 
+.main__par{
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    @include b.breakpoint1 {
+        font-size: 20px;
+    }
+    @include b.breakpoint2 {
+        font-size: 15px;
+    }
+}
+
+.main__front{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.main__front_image{
+    width: 350px;
+    height: auto;
+    @include b.breakpoint1 {
+        width: 300px;
+    }
+    @include b.breakpoint2 {
+        width: 250px;
+    }
+}
+
+.main__front_library{
+    width: 518px;
+    height: auto;
+}
+
+.main__content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main__images{
+    width: 450px;
+    height: auto;
+    margin: 10px;
+    transition: background-position 0.5s ease, transform 0.5s ease;
+    @include b.breakpoint1 {
+        width: 400px;
+    }
+    @include b.breakpoint2 {
+        width: 350px;
+    }
+}
+    
+.main__images:hover{
+    transform: scale(1.05);
+    background-position: center;
+}
+
 .section__cards{
     @include b.cards-grid;
     margin-top: 30px;
     margin-left: 110px;
     margin-right: 110px;
-    
+    @include b.breakpoint1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .card__image{
     width: 100%;
-    
+    @include b.breakpoint1 {
+        width: 100px;
+    }
 }
 
 .footer {
     @include b.footer-flex;
  
     color: black;
+    @include b.breakpoint1 {
+        font-size: 15px;
+    }
+    @include b.breakpoint2 {
+        font-size: 12px;
+    }
 }
 .footer__socials--img {
     width: 30px;
     height: 30px;
     margin: 0 10px;
 }
+
+
+.card {
+  // Estilos generales (Desktop/Tablet)
+  width: 18rem;
+  border-radius: 12px;
+  @include b.breakpoint1 {
+    // Estilos para Tablet
+    border-radius: 10px;
+    width: 15rem;
+  }
+    @include b.breakpoint2 {
+        // Estilos para Mobile
+        border-radius: 8px;
+        width: 12rem;
+    }
+}
+  
+  .card-title {
+    font-size: 1.5rem;
+    @include b.breakpoint1 {
+      font-size: 1.2rem;
+    }
+
+    @include b.breakpoint2 {
+      font-size: 1rem;
+    }
+  }
+
+  
